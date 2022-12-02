@@ -32,14 +32,23 @@ public class MoveImporter implements Importer<Move> {
 
     private static Move mapToMove(String datum) {
         String[] split = datum.split(" ");
-        return new Move(getShape(split[0]), getShape(split[1]));
+        return new Move(getShape(split[0]), getResult(split[1]));
     }
 
     private static Shape getShape(String s) {
         return switch (s) {
-            case "A", "X" -> Shape.ROCK;
-            case "B", "Y" -> Shape.PAPER;
-            case "C", "Z" -> Shape.SCISSORS;
+            case "A" -> Shape.ROCK;
+            case "B" -> Shape.PAPER;
+            case "C" -> Shape.SCISSORS;
+            default -> throw new IllegalStateException("Unexpected value: " + s);
+        };
+    }
+
+    private static Result getResult(String s) {
+        return switch (s) {
+            case "X" -> Result.LOSS;
+            case "Y" -> Result.DRAW;
+            case "Z" -> Result.WIN;
             default -> throw new IllegalStateException("Unexpected value: " + s);
         };
     }

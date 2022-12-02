@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MoveImporterTest {
 
-    public static final String RESOURCE = "/day2_test.txt";
+    protected static final String RESOURCE = "/day2_test.txt";
 
     private final Importer<Move> importer = MoveImporter.getInstance();
 
@@ -22,16 +22,16 @@ class MoveImporterTest {
     @Test
     void testMoves() {
         List<Move> moves = importer.importData(RESOURCE);
-        assertEquals(new Move(Shape.ROCK, Shape.PAPER), moves.get(0));
-        assertEquals(new Move(Shape.PAPER, Shape.ROCK), moves.get(1));
-        assertEquals(new Move(Shape.SCISSORS, Shape.SCISSORS), moves.get(2));
+        assertEquals(new Move(Shape.ROCK, Result.DRAW), moves.get(0));
+        assertEquals(new Move(Shape.PAPER, Result.LOSS), moves.get(1));
+        assertEquals(new Move(Shape.SCISSORS, Result.WIN), moves.get(2));
     }
 
     @Test
     void testMovesScore() {
         List<Move> moves = importer.importData(RESOURCE);
-        assertEquals(8, moves.get(0).getScore());
+        assertEquals(4, moves.get(0).getScore());
         assertEquals(1, moves.get(1).getScore());
-        assertEquals(6, moves.get(2).getScore());
+        assertEquals(7, moves.get(2).getScore());
     }
 }

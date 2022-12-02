@@ -17,13 +17,13 @@ class GameTest {
     void testGetScore() {
         List<Move> moves = importer.importData(MoveImporterTest.RESOURCE);
         Game game = new Game(moves);
-        assertEquals(15, game.getScore());
+        assertEquals(12, game.getScore());
     }
 
     @Test
     void testGetScore_2() {
         List<Move> moves = importer.importData(RESOURCE_2);
         Game game = new Game(moves);
-        assertEquals(25, game.getScore());
+        assertEquals(31, game.getScore());
     }
 }
