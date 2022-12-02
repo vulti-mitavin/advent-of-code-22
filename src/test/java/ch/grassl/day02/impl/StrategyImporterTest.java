@@ -1,17 +1,21 @@
-package ch.grassl.day2.impl;
+package ch.grassl.day02.impl;
 
 import ch.grassl.common.Importer;
+import ch.grassl.day02.impl.importer.StrategyImporter;
+import ch.grassl.day02.impl.model.Move;
+import ch.grassl.day02.impl.model.Result;
+import ch.grassl.day02.impl.model.Shape;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MoveImporterTest {
+class StrategyImporterTest {
 
     protected static final String RESOURCE = "/day2_test.txt";
 
-    private final Importer<Move> importer = MoveImporter.getInstance();
+    private final Importer<Move> importer = StrategyImporter.getInstance();
 
     @Test
     void testImportData() {

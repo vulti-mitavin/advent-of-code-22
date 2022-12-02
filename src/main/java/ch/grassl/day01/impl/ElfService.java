@@ -1,16 +1,15 @@
-package ch.grassl.day1.impl;
+package ch.grassl.day01.impl;
 
-import java.util.Collections;
+import ch.grassl.day01.impl.model.Elf;
+
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
-public class CalorieService {
+public class ElfService {
 
     private final List<Elf> elves;
 
-    public CalorieService(List<Elf> elves) {
+    public ElfService(List<Elf> elves) {
         this.elves = elves;
     }
 

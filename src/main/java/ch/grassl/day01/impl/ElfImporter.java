@@ -1,6 +1,7 @@
-package ch.grassl.day1.impl;
+package ch.grassl.day01.impl;
 
 import ch.grassl.common.Importer;
+import ch.grassl.day01.impl.model.Elf;
 
 import java.util.ArrayList;
 import java.util.List;

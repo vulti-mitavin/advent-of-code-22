@@ -1,4 +1,4 @@
-package ch.grassl.day2.impl;
+package ch.grassl.day02.impl.model;
 
 import lombok.Getter;
 

@@ -1,8 +1,8 @@
-package ch.grassl.day2.impl;
+package ch.grassl.day02.impl.model;
 
 import lombok.Getter;
 
-enum Result {
+public enum Result {
     WIN(6), LOSS(0), DRAW(3);
 
     @Getter

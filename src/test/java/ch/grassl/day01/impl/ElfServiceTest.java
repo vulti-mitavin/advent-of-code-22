@@ -1,25 +1,26 @@
-package ch.grassl.day1.impl;
+package ch.grassl.day01.impl;
 
+import ch.grassl.day01.impl.model.Elf;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class CalorieServiceTest {
+class ElfServiceTest {
 
     private final List<Elf> elves = ElfImporter.getInstance().importData("/day1_test.txt");
-    private final CalorieService calorieService = new CalorieService(elves);
+    private final ElfService elfService = new ElfService(elves);
 
     @Test
     void findElfWithMostCalories() {
-        Elf elfWithMostCalories = calorieService.findElfWithMostCalories();
+        Elf elfWithMostCalories = elfService.findElfWithMostCalories();
         assertEquals(24000, elfWithMostCalories.getCalories());
     }
 
     @Test
     void findCalorieBuffer() {
-        int calorieBuffer = calorieService.findCalorieBuffer();
+        int calorieBuffer = elfService.findCalorieBuffer();
         assertEquals(45000, calorieBuffer);
     }
 }
