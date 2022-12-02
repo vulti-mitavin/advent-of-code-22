@@ -19,8 +19,8 @@ public class Day1 extends AdventOfCodeDay {
         Elf elf = calorieService.findElfWithMostCalories();
         int calorieBuffer = calorieService.findCalorieBuffer();
 
-        result.add(String.valueOf(elf.getCalories()));
-        result.add(String.valueOf(calorieBuffer));
+        result.add(elf.getCalories());
+        result.add(calorieBuffer);
         printResult();
     }
 }

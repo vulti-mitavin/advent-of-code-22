@@ -1,7 +1,6 @@
 package ch.grassl.day1.impl;
 
 import ch.grassl.common.Importer;
-import ch.grassl.util.ResourceReader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +14,7 @@ public class ElfImporter implements Importer<Elf> {
     }
     @Override
     public List<Elf> importData(String resource) {
-        String[] data = ResourceReader.of(resource).read();
+        String[] data = Importer.read(resource);
         return mapToElves(data);
     }
 

@@ -8,12 +8,12 @@ import java.util.List;
 @Slf4j
 public abstract class AdventOfCodeDay {
 
-    protected final List<String> result = new ArrayList<>();
+    protected final List<Object> result = new ArrayList<>();
 
     public abstract void run();
 
     public void printResult() {
-        for (String r : result) {
+        for (Object r : result) {
             log.info("{}: The {}. result is: {}", this.getClass().getSimpleName(), result.indexOf(r) + 1, r);
         }
         log.info("-------------------------");
