@@ -5,11 +5,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class ResourceReader {
+public final class ResourceReader {
 
     private final InputStream in;
 
-    public ResourceReader(String resource) {
+    private ResourceReader(String resource) {
         in = ResourceReader.class.getResourceAsStream(resource);
     }
 
