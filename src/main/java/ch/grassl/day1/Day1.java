@@ -13,7 +13,7 @@ public class Day1 extends AdventOfCodeDay {
 
     @Override
     public void run() {
-        List<Elf> elves = ElfImporter.importElves(RESOURCE);
+        List<Elf> elves = ElfImporter.getInstance().importData(RESOURCE);
         CalorieService calorieService = new CalorieService(elves);
 
         Elf elf = calorieService.findElfWithMostCalories();

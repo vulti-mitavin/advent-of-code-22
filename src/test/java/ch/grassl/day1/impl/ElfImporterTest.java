@@ -1,7 +1,5 @@
 package ch.grassl.day1.impl;
 
-import ch.grassl.day1.impl.Elf;
-import ch.grassl.day1.impl.ElfImporter;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -14,7 +12,7 @@ class ElfImporterTest {
 
     @Test
     void importElves_1() {
-        List<Elf> elves = ElfImporter.importElves(RESOURCE);
+        List<Elf> elves = ElfImporter.getInstance().importData(RESOURCE);
         assertEquals(5, elves.size());
         assertEquals(6000, elves.get(0).getCalories());
         assertEquals(4000, elves.get(1).getCalories());

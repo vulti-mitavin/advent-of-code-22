@@ -1,17 +1,20 @@
 package ch.grassl.day1.impl;
 
+import ch.grassl.common.Importer;
 import ch.grassl.util.ResourceReader;
-import lombok.experimental.UtilityClass;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static ch.grassl.util.Util.isEmpty;
 
-@UtilityClass
-public class ElfImporter {
+public class ElfImporter implements Importer<Elf> {
 
-    public static List<Elf> importElves(String resource) {
+    public static ElfImporter getInstance() {
+        return new ElfImporter();
+    }
+    @Override
+    public List<Elf> importData(String resource) {
         String[] data = ResourceReader.of(resource).read();
         return mapToElves(data);
     }
