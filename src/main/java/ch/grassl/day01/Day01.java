@@ -7,7 +7,7 @@ import ch.grassl.day01.impl.ElfImporter;
 
 import java.util.List;
 
-public class Day1 extends AdventOfCodeDay {
+public class Day01 extends AdventOfCodeDay {
 
     private static final String RESOURCE = "/day1.txt";
 
