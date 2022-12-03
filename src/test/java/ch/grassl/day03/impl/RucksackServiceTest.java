@@ -11,9 +11,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class RucksackServiceTest {
 
-    private final Importer<Rucksack> importer = ItemImporter.getInstance();
+    private final Importer<Rucksack> importer = new ItemImporter();
     private final List<Rucksack> rucksacks = importer.importData(ItemImporterTest.RESOURCE);
-    private final RucksackService service = RucksackService.of(rucksacks);
+    private final RucksackService service = RucksackService.Companion.of(rucksacks);
 
     @Test
     void testFindPriorityScore() {

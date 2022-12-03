@@ -10,11 +10,11 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TeamTest {
 
-    private final Importer<Rucksack> importer = ItemImporter.getInstance();
+    private final Importer<Rucksack> importer = new ItemImporter();
     private final List<Rucksack> rucksacks = importer.importData(ItemImporterTest.RESOURCE);
 
     @Test

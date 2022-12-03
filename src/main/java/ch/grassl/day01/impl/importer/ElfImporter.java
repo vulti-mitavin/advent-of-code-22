@@ -35,6 +35,7 @@ public class ElfImporter implements Importer<Elf> {
                 }
                 elves.add(new Elf(calories));
             }
+            i++;
         }
         return elves;
     }

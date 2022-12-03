@@ -14,7 +14,7 @@ class ItemImporterTest {
 
     protected static final String RESOURCE = "/day3_test.txt";
 
-    private final Importer<Rucksack> importer = ItemImporter.getInstance();
+    private final Importer<Rucksack> importer = new ItemImporter();
     private final List<Rucksack> rucksacks = importer.importData(RESOURCE);
 
     @Test
