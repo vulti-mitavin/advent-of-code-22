@@ -1,4 +1,4 @@
-package ch.grassl.day03.impl;
+package ch.grassl.day03.impl.model;
 
 import java.util.HashSet;
 import java.util.List;

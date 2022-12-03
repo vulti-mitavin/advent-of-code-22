@@ -1,5 +1,6 @@
 package ch.grassl.day03.impl;
 
+import ch.grassl.day03.impl.model.Item;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 

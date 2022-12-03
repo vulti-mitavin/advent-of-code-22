@@ -3,7 +3,7 @@ package ch.grassl.day01;
 import ch.grassl.common.AdventOfCodeDay;
 import ch.grassl.day01.impl.ElfService;
 import ch.grassl.day01.impl.model.Elf;
-import ch.grassl.day01.impl.ElfImporter;
+import ch.grassl.day01.impl.importer.ElfImporter;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package ch.grassl.day01.impl;
+package ch.grassl.day01.impl.importer;
 
 import ch.grassl.common.Importer;
 import ch.grassl.day01.impl.model.Elf;
@@ -21,7 +21,8 @@ public class ElfImporter implements Importer<Elf> {
 
     private static List<Elf> mapToElves(String[] data) {
         List<Elf> elves = new ArrayList<>();
-        for (int i = 0; i < data.length; i++) {
+        int i = 0;
+        while (i < data.length) {
             if (!isEmpty(data[i])) {
                 int calories = 0;
                 for (int j = i; j < data.length; j++) {

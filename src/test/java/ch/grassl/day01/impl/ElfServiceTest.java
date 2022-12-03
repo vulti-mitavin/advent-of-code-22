@@ -1,5 +1,6 @@
 package ch.grassl.day01.impl;
 
+import ch.grassl.day01.impl.importer.ElfImporter;
 import ch.grassl.day01.impl.model.Elf;
 import org.junit.jupiter.api.Test;
 

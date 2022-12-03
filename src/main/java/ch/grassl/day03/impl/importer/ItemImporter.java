@@ -1,6 +1,8 @@
-package ch.grassl.day03.impl;
+package ch.grassl.day03.impl.importer;
 
 import ch.grassl.common.Importer;
+import ch.grassl.day03.impl.model.Item;
+import ch.grassl.day03.impl.model.Rucksack;
 import ch.grassl.util.ResourceReader;
 import ch.grassl.util.Util;
 

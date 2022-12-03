@@ -1,6 +1,10 @@
 package ch.grassl.day03.impl;
 
 import ch.grassl.common.Importer;
+import ch.grassl.day03.impl.importer.ItemImporter;
+import ch.grassl.day03.impl.model.Item;
+import ch.grassl.day03.impl.model.Rucksack;
+import ch.grassl.day03.impl.model.Team;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

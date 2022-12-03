@@ -1,6 +1,9 @@
 package ch.grassl.day03.impl;
 
 import ch.grassl.common.Importer;
+import ch.grassl.day03.impl.importer.ItemImporter;
+import ch.grassl.day03.impl.model.Item;
+import ch.grassl.day03.impl.model.Rucksack;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

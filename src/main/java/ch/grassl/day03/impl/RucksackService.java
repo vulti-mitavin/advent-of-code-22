@@ -1,6 +1,9 @@
 package ch.grassl.day03.impl;
 
 import ch.grassl.day03.Day03;
+import ch.grassl.day03.impl.model.Item;
+import ch.grassl.day03.impl.model.Rucksack;
+import ch.grassl.day03.impl.model.Team;
 
 import java.util.ArrayList;
 import java.util.List;
