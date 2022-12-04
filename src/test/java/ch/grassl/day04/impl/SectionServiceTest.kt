@@ -1,6 +1,7 @@
 package ch.grassl.day04.impl
 
 import ch.grassl.day04.impl.ElfImporterTest.Companion.RESOURCE
+import ch.grassl.day04.impl.importer.ElfImporter
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

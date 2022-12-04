@@ -3,19 +3,16 @@ package ch.grassl.day03.impl.importer
 import ch.grassl.common.Importer
 import ch.grassl.day03.impl.model.Item
 import ch.grassl.day03.impl.model.Rucksack
-import ch.grassl.util.ResourceReader
 
 class ItemImporter : Importer<Rucksack> {
 
-    override fun importData(resource: String?): List<Rucksack> {
+    override fun importData(resource: String): List<Rucksack> {
         val rucksacks = ArrayList<Rucksack>()
-        val lines = ResourceReader.of(resource).read()
+        val lines = Importer.read(resource)
         for (line in lines) {
-            if (!line.isNullOrEmpty()) {
-                rucksacks.add(
-                    mapToRucksack(line)
-                )
-            }
+            rucksacks.add(
+                mapToRucksack(line)
+            )
         }
         return rucksacks
     }

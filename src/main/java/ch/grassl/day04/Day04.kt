@@ -1,8 +1,8 @@
 package ch.grassl.day04
 
 import ch.grassl.common.AdventOfCodeDay
-import ch.grassl.day04.impl.ElfImporter
 import ch.grassl.day04.impl.SectionService
+import ch.grassl.day04.impl.importer.ElfImporter
 
 class Day04 : AdventOfCodeDay() {
 

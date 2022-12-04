@@ -1,8 +1,7 @@
 package ch.grassl.day04
 
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-
-import org.junit.jupiter.api.Assertions.*
 
 internal class Day04Test {
 

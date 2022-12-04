@@ -1,4 +1,4 @@
-package ch.grassl.day04.impl
+package ch.grassl.day04.impl.model
 
 class Elf(private val sectionRange: IntRange) {
 

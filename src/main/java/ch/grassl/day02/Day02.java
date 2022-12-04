@@ -11,8 +11,8 @@ public class Day02 extends AdventOfCodeDay {
 
     @Override
     public void run() {
-        result.add(new Game(MoveImporter.getInstance(), RESOURCE));
-        result.add(new Game(StrategyImporter.getInstance(), RESOURCE));
+        getResult().add(new Game(MoveImporter.getInstance(), RESOURCE));
+        getResult().add(new Game(StrategyImporter.getInstance(), RESOURCE));
         printResult();
     }
 }

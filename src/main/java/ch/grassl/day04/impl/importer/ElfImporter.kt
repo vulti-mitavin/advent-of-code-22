@@ -1,6 +1,7 @@
-package ch.grassl.day04.impl
+package ch.grassl.day04.impl.importer
 
 import ch.grassl.common.Importer
+import ch.grassl.day04.impl.model.Elf
 import ch.grassl.util.ResourceReader
 
 class ElfImporter : Importer<Pair<Elf, Elf>> {

@@ -1,5 +1,7 @@
 package ch.grassl.day04.impl
 
+import ch.grassl.day04.impl.model.Elf
+
 class SectionService private constructor(private val pairs: List<Pair<Elf, Elf>>) {
 
     companion object {

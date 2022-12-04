@@ -1,5 +1,6 @@
 package ch.grassl.day04.impl
 
+import ch.grassl.day04.impl.model.Elf
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
