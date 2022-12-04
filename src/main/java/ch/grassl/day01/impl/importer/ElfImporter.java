@@ -2,6 +2,7 @@ package ch.grassl.day01.impl.importer;
 
 import ch.grassl.common.Importer;
 import ch.grassl.day01.impl.model.Elf;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,8 +14,11 @@ public class ElfImporter implements Importer<Elf> {
     public static ElfImporter getInstance() {
         return new ElfImporter();
     }
+
+
+    @NotNull
     @Override
-    public List<Elf> importData(String resource) {
+    public List<Elf> importData(@NotNull String resource) {
         String[] data = Importer.read(resource);
         return mapToElves(data);
     }
