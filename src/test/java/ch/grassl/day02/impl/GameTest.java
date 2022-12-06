@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class GameTest {
 
-    private static final String RESOURCE_2 = "/day2_test_2.txt";
+    private static final String RESOURCE_2 = "/day02/day2_test_2.txt";
 
     private Importer<List<Move>> importer;
 

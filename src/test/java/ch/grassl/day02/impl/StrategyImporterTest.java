@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StrategyImporterTest {
 
-    protected static final String RESOURCE = "/day2_test.txt";
+    protected static final String RESOURCE = "/day02/day2_test.txt";
 
     private final Importer<List<Move>> importer = StrategyImporter.getInstance();
 

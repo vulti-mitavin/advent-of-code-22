@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ElfServiceTest {
 
-    private final List<Elf> elves = ElfImporter.getInstance().importData("/day1_test.txt");
+    private final List<Elf> elves = ElfImporter.getInstance().importData("/day01/day1_test.txt");
     private final ElfService elfService = new ElfService(elves);
 
     @Test

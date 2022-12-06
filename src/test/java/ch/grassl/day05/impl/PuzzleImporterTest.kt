@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Assertions.*
 internal class PuzzleImporterTest {
 
     companion object {
-        const val RESOURCE = "/day5_test.txt"
+        const val RESOURCE = "/day05/day5_test.txt"
     }
 
     private val importer = PuzzleImporter(3, 3, 5)

@@ -18,7 +18,7 @@ internal class SectionServiceTest {
 
     @Test
     fun testNumberOfPairsWithEnclosingSections_2() {
-        service = SectionService.of(importer.importData("/day4_test_2.txt"))
+        service = SectionService.of(importer.importData("/day04/day4_test_2.txt"))
         assertEquals(4, service.numberOfPairsWithEnclosingSections())
     }
 
@@ -30,7 +30,7 @@ internal class SectionServiceTest {
 
     @Test
     fun testNumberOfPairsWithOverlappingSections_2() {
-        service = SectionService.of(importer.importData("/day4_test_2.txt"))
+        service = SectionService.of(importer.importData("/day04/day4_test_2.txt"))
         assertEquals(8, service.numberOfPairsWithOverlappingSections())
     }
 }

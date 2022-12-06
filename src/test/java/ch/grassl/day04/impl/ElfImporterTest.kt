@@ -12,7 +12,7 @@ internal class ElfImporterTest {
     private lateinit var data: List<Pair<Elf, Elf>>
 
     companion object {
-        const val RESOURCE = "/day4_test.txt"
+        const val RESOURCE = "/day04/day4_test.txt"
     }
     val importer = ElfImporter()
 

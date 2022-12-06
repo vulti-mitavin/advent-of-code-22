@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MoveImporterTest {
 
-    protected static final String RESOURCE = "/day2_test.txt";
+    protected static final String RESOURCE = "/day02/day2_test.txt";
 
     private final Importer<List<Move>> importer = MoveImporter.getInstance();
 

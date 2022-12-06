@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ItemImporterTest {
 
-    protected static final String RESOURCE = "/day3_test.txt";
+    protected static final String RESOURCE = "/day03/day3_test.txt";
 
     private final ItemImporter importer = new ItemImporter();
     private final List<Rucksack> rucksacks = importer.importData(RESOURCE);

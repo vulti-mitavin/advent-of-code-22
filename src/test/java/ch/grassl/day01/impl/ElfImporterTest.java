@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ElfImporterTest {
 
-    private static final String RESOURCE = "/day1_test.txt";
+    private static final String RESOURCE = "/day01/day1_test.txt";
 
     @Test
     void importElves_1() {
