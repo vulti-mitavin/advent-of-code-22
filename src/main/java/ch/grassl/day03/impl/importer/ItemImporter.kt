@@ -4,7 +4,7 @@ import ch.grassl.common.Importer
 import ch.grassl.day03.impl.model.Item
 import ch.grassl.day03.impl.model.Rucksack
 
-class ItemImporter : Importer<Rucksack> {
+class ItemImporter : Importer<List<Rucksack>> {
 
     override fun importData(resource: String): List<Rucksack> {
         val rucksacks = ArrayList<Rucksack>()

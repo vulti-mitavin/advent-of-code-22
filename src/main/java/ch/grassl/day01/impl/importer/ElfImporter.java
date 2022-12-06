@@ -9,7 +9,7 @@ import java.util.List;
 
 import static ch.grassl.util.Util.isEmpty;
 
-public class ElfImporter implements Importer<Elf> {
+public class ElfImporter implements Importer<List<Elf>> {
 
     public static ElfImporter getInstance() {
         return new ElfImporter();

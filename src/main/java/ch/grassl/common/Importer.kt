@@ -4,7 +4,7 @@ import ch.grassl.util.ResourceReader
 
 interface Importer<T> {
 
-    fun importData(resource: String): List<T>
+    fun importData(resource: String): T
 
     companion object {
         @JvmStatic

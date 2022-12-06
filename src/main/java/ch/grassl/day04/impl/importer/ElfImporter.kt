@@ -4,7 +4,7 @@ import ch.grassl.common.Importer
 import ch.grassl.day04.impl.model.Elf
 import ch.grassl.util.ResourceReader
 
-class ElfImporter : Importer<Pair<Elf, Elf>> {
+class ElfImporter : Importer<List<Pair<Elf, Elf>>> {
 
     override fun importData(resource: String): List<Pair<Elf, Elf>> {
         val lines = ResourceReader.of(resource).read()

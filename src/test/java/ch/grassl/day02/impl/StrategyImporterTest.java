@@ -15,7 +15,7 @@ class StrategyImporterTest {
 
     protected static final String RESOURCE = "/day2_test.txt";
 
-    private final Importer<Move> importer = StrategyImporter.getInstance();
+    private final Importer<List<Move>> importer = StrategyImporter.getInstance();
 
     @Test
     void testImportData() {

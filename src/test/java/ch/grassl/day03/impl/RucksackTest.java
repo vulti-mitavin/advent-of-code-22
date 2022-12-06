@@ -1,6 +1,5 @@
 package ch.grassl.day03.impl;
 
-import ch.grassl.common.Importer;
 import ch.grassl.day03.impl.importer.ItemImporter;
 import ch.grassl.day03.impl.model.Item;
 import ch.grassl.day03.impl.model.Rucksack;
@@ -10,11 +9,11 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RucksackTest {
 
-    private final Importer<Rucksack> importer = new ItemImporter();
+    private final ItemImporter importer = new ItemImporter();
     private final List<Rucksack> rucksacks = importer.importData(ItemImporterTest.RESOURCE);
 
     @ParameterizedTest

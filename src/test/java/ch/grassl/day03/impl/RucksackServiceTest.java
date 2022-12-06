@@ -1,17 +1,16 @@
 package ch.grassl.day03.impl;
 
-import ch.grassl.common.Importer;
 import ch.grassl.day03.impl.importer.ItemImporter;
 import ch.grassl.day03.impl.model.Rucksack;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RucksackServiceTest {
 
-    private final Importer<Rucksack> importer = new ItemImporter();
+    private final ItemImporter importer = new ItemImporter();
     private final List<Rucksack> rucksacks = importer.importData(ItemImporterTest.RESOURCE);
     private final RucksackService service = RucksackService.Companion.of(rucksacks);
 

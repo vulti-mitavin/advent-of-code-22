@@ -14,7 +14,7 @@ class GameTest {
 
     private static final String RESOURCE_2 = "/day2_test_2.txt";
 
-    private Importer<Move> importer;
+    private Importer<List<Move>> importer;
 
     @Test
     void testGetScoreWithStrategyImport() {

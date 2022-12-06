@@ -1,6 +1,5 @@
 package ch.grassl.day03.impl;
 
-import ch.grassl.common.Importer;
 import ch.grassl.day03.impl.importer.ItemImporter;
 import ch.grassl.day03.impl.model.Item;
 import ch.grassl.day03.impl.model.Rucksack;
@@ -14,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TeamTest {
 
-    private final Importer<Rucksack> importer = new ItemImporter();
+    private final ItemImporter importer = new ItemImporter();
     private final List<Rucksack> rucksacks = importer.importData(ItemImporterTest.RESOURCE);
 
     @Test

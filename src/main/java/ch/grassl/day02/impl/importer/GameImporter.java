@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class GameImporter implements Importer<Move> {
+public abstract class GameImporter implements Importer<List<Move>> {
 
     @NotNull
     @Override

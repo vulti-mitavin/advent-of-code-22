@@ -13,7 +13,7 @@ public class Game {
         this.moves = moves;
     }
 
-    public Game(Importer<Move> importer, String resource) {
+    public Game(Importer<List<Move>> importer, String resource) {
         this.moves = importer.importData(resource);
     }
 
