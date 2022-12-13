@@ -35,6 +35,6 @@ internal class GridTest {
     fun testCountVisited() {
         val grid = Grid(moves, gridSize)
         grid.applyMoves()
-        assertEquals(13, grid.countVisited())
+        assertEquals(14, grid.countVisited())
     }
 }
